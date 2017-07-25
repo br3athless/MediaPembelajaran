@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:title="Ubah Ukuran Font"
+        android:key="fSize"
+        android:summary="Ukuran font akan berubah pada materi dan contoh koding"
+        android:entries="@array/ukuranFont"
+        android:entryValues="@array/valueSize">
+    </ListPreference>
+</PreferenceScreen>

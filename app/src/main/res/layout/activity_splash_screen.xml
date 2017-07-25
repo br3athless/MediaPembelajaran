@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="r3ckless.mediapembelajaran.SplashScreenActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f65cf"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/alpro"
+        tools:layout_editor_absoluteY="228dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Algoritma Dasar Pemrograman"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteY="296dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="By : Nur Fahmi"
+        android:id="@+id/textView2"
+        android:editable="false"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:typeface="sans"
+        tools:layout_editor_absoluteY="490dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:background="#1f65cf">
+
+    <!--Layout Button-->
+    <TableLayout
+
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/btnMateri"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/book"
+                    android:focusableInTouchMode="false"
+                    android:text="Materi"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+
+                <Button
+                    android:id="@+id/btnCode"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/code"
+                    android:text="Contoh Koding"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/btnVideo"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/vid"
+                    android:text="Video"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+
+                <Button
+                    android:id="@+id/btnVisual"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/glasses"
+                    android:text="Visualisasi"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</RelativeLayout>

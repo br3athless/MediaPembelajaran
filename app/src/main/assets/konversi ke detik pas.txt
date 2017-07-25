@@ -1,0 +1,20 @@
+PROGRAM Konversi_ke_detik;
+{ membaca waktu tempuh dalam jam, menit, detik, lalu mengkonversi waktu tersebut kedalam detik }
+{* Deklarasi *}
+type Jam = record
+		hh:longint; {jam}
+		mm:longint; {menit}
+		ss:longint; {detik}
+		end;
+
+var j : Jam;
+    TotalDetik : longint;
+
+{*ALGORITMA*}
+begin
+	write ('Jam :'); readln(j.hh);
+	write ('Menit :'); readln(j.mm);
+	write ('Detik :'); readln(j.ss);
+	TotalDetik:= (j.hh*3600) + (j.mm*60) +j.ss;
+	writeln('Total detik = ', TotalDetik);
+end.

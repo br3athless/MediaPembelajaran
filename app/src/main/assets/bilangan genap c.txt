@@ -1,0 +1,17 @@
+//Program BilanganGenap
+/*Mencetak pesan "genap" jika sebuah bilangan bulat yang di-input-kan merupakan
+bilangan genap*/
+#include <stdio.h>
+main()
+{
+	/*Deklarasi*/
+	int x;
+
+	/*Algoritma*/
+	printf("Ketikkan sembarang bilangan bulat :");
+	scanf("%d",&x);
+	if (x % 2 == 0)
+	{
+		printf("genap");
+	}
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="#1f65cf">
+
+    <!--Layout Button-->
+    <TableLayout
+
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="25dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMateri"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/book"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:focusableInTouchMode="false"
+                    android:text="Materi"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+
+                <Button
+                    android:id="@+id/btnCode"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/code"
+                    android:text="Contoh Koding"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="25dp">
+
+                <Button
+                    android:id="@+id/btnVideo"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/vid"
+                    android:text="Video"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+
+                <Button
+                    android:id="@+id/btnVisual"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/btn_state"
+                    android:drawableTop="@drawable/glasses"
+                    android:text="Visualisasi"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#1f65cf" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+PROGRAM BilanganGenap;
+{ Mencetak pesan "genap" jika sebuah bilangan bulat yang di-input-kan merupakan
+bilangan genap }
+
+{Deklarasi}
+uses crt;
+var x : integer;
+
+{Algoritma}
+begin
+	clrscr;
+	write('Ketikkan sembarang bilangan bulat :'); readln(x);
+	if x mod 2 = 0 then
+	begin
+	writeln('genap');
+	end;
+end.

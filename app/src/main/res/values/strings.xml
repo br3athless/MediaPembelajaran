@@ -1,0 +1,729 @@
+<resources>
+    <string name="app_name">Alpro</string>
+    <string name="aboutTitle">Alpro</string>
+    <string name="aboutContent">Aplikasi ini adalah aplikasi Media Pembelajaran untuk Mata Kuliah Algoritma dan Dasar Pemrograman.
+        \nAplikasi ini dibuat oleh Nur Fahmi.\nPoliteknik Negeri Pontianak.
+    </string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>C</item>
+        <item>C++</item>
+        <item>Pascal</item>
+    </string-array>
+
+    <string name="title_activity_code">Contoh Koding</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_tentang">Tentang Aplikasi</string>
+    <string name="action_setting">Pengaturan Font</string>
+
+    //konten dan title materi Definisi Algoritma
+    <string name="title_def_algo">1.1 Definisi Algoritma</string>
+    <string name="content_def_algo"><b>Algoritma</b> adalah <b>urutan langkah - langkah untuk memecahkan suatu masalah</b>.
+        \n\nTerdapat beberapa definisi lain dari algoritma, tetapi pada prinsipnya senada dengan definisi yang di ungkapkan di atas antara lain :
+        \n\n1. <b>Algoritma</b> adalah deretan langkah - langkah komputasi yang mentransformasikan data masukan menjadi keluaran <b>[COR92]</b>.
+        \n\n2. <b>Algoritma</b> adalah deretan instruksi yang jelas untuk memecahkan masalah, yaitu untuk memperoleh keluaran yang di inginkan
+        dari suatu masukan dalam jumlah waktu yang terbatas <b>[LEV03]</b>.
+        \n\n3. <b>Algoritma</b> adalah prosedur komputasi yang terdefinisi dengan baik yang menggunakan beberapa nilai yang disebut keluaran.
+        Jadi, algoritma adalah deretan langkah komputasi yang mentransformasikan masukan menjadi keluaran <b>[COR89]</b>.
+    </string>
+
+    //konten dan title materi Sejarah Algoritma
+    <string name="title_hist_algo">1.2 Sejarah Algoritma</string>
+    <string name="content_hist_algo">Ditinjau dari asal usul kata, kata <b>algoritma</b> sendiri mempunyai sejarah yang cukup aneh.
+        Kata ini tidak muncul dalam kamus Webster sampai akhir tahun 1957. Orang hanya menemukan kata <i>algorism</i> yang berarti
+        proses menghitung dengan angka-Arab [KNU73].
+        \n\nAkhirnya para ahli sejarah matematika menemukan asal mula kata tersebut. Kata <i>algorism</i> berasal dari nama penulis buku
+        arab yang terkenal, yaitu <b>Abu Ja\'far\  Muhammad ibnu Musa al-Khuwarizmi</b>.
+        \n\nAl-Khuwarizmi menulis buku yang berjudul
+        <i>Kitab al jabar wal-muqabala</i>, yang artinya <b>Buku Pemugaran dan Pengurangan</b> <i>(The book of restoration and reduction)</i>.
+        Dari judul buku itu kita juga memperoleh akar kata <b>aljabar</b> <i>(algebra)</i>.
+        Perubahan dari kata <i>algorism</i> menjadi <i>algorithm</i> muncul karena kata <i>algorism</i> sering dikelirukan dengan <i>arithmetic</i>,
+        sehingga akhiran <i>-sm</i> berubah menjadi <i>-thm</i>.
+        \n\nKarena perhitungan dengan angka Arab sudah menjadi hal yang sudah biasa/lumrah, maka lambat laun kata <i>algorithm</i> berangsur - angsur dipakai
+        sebagai metode perhitungan (komputasi) secara umum, sehingga kehilangan makna aslinya [PAR95].
+        Dalam bahasa Indonesia, kata <i>algorithm</i> diserap menjadi <i>algoritma</i>.
+    </string>
+
+    //konten dan title materi Urutan
+    <string name="title_struk_urut">2.1 Struktur Urut</string>
+    <string name="content_struk_urut">\t\tSebuah stuktur urut (runtunan) terdiri dari satu atau lebih pernyataan,
+    setiap pernyataan ditulis dalam satu baris atau dipisahkan dengan tanda titik koma.
+    tiap prnyataan dikerjakan secara berurutan (sekuensial) sesuai dengan urutannya di dalam teks algoritma, yaitu sebuah
+    instruksi dilaksanakan setelah instruksi sebelumnya selesai dilaksanakan.
+    Urutan instruksi menentukan keadaan akhir algoritma. Bila urutannya diubah, maka hasil akhirnya mungkin juga berubah.
+    Runtunan satu atau lebih pernyataan dinamakan <b>pernyataan-gabungan</b> <i>(compund statements)</i>
+    \n\nPerhatikan proses runtunan lima buah pernyataan yang dilambangkan dengan s1, s2, s3, s4, dan s5 berikut :
+    \n\n\ts1
+    \n\n\ts2
+    \n\n\ts3
+    \n\n\ts4
+    \n\n\ts5
+    \n\nMula - mula pemroses melaksanakan proses pernyataan s1. Pernyataan s2 dilaksanakan setelah pernyataan s1 selesai.
+    Selanjutnya, proses s3 dilaksanakan setelah proses s2 selesai. Demikian seterusnya sampai pernyataan terakhir s5 dilaksanakan.
+    Setelah pernyatan s5 selesai dilaksanakan, algoritma berhenti.</string>
+
+    //konten dan title materi Keptusan
+    <string name="title_struk_kep">2.2 Struktur Keputusan</string>
+    <string name="content_struk_kep"><font color="blue"><b>2.2.1 Keputusan <i>If</i>-<i>Then</i></b> </font>
+        \n\nAdakalanya sebuah instruksi dikerjakan jika kondisi tertentu dipenuhi. Misalkan
+    kendaraan Anda tiba di perempatan yang ada <i>traffic light</i>. Jika lampu <i>traffic light</i> sekarang berwarna merah,
+    maka kendaraan anda harus berhenti. Langkah ini kita tulis dalam pernyataan berikut :
+    \n\n<font bgcolor="gray" color="white"><b>Jika lampu <i>traffic light</i> berwarna merah, maka berhenti</b></font>
+    \n\nPernyataan di atas dapat ditulis dalam pernyataan-pemilihan <i>(selection-statement)</i>, atau disebut juga pernyataan
+    kondisional, sebagai berikut :\n\n
+        <font bgcolor="gray" color="white"><b><u>if</u> <i>kondisi</i> <u>then</u></b></font>\n
+        <font bgcolor="gray" color="white"><b>\t\t<i>aksi</i></b></font>
+        \n\nDalam bahasa Indonesia, <u>if</u> berarti \"jika\" dan <u>then</u> artinya \"maka\";
+        <i>kondisi</i> adalah persyaratan yang bernilai benar atau salah; <i>aksi</i> sesudah kata <i>then</i> hanya dilaksanakan
+        apabila kondisi bernilai benar. Sebaliknya, apabila kondisi bernilai salah, maka aksi tidak dilaksanakan.
+        \nPerhatikan bahwa kata yang digarisbawahi, <u>if</u> dan <u>then</u>, merupakan kata kunci <i>(keywords)</i> untuk struktur
+        pemilihan ini.
+        \n\n<font color="blue"><b>2.2.2 Keputusan <i>If</i>-<i>Then</i>-<i>Else</i></b> </font>
+        \n\nStruktur pemilihan if-then hanya memberikan satu pilihan aksi bila kondisi
+        (persyaratan) dipenuhi (bernilai benar), dan tidak memberi pilihan aksi lain
+        bila kondisi bernilai salah. Bentuk pemilihan yang lebih umum ialah
+        memilih satu dari dua buah aksi bergantung pada nilai kondisinya :
+        \n\n<font bgcolor="gray" color="white"><b><u>if</u> <i>kondisi</i> <u>then</u></b></font>
+        \n<font bgcolor="gray" color="white"><b>\t\t<i>aksi 1</i></b></font>
+        \n<font bgcolor="gray" color="white"><b><u>else</u></b></font>
+        \n<font bgcolor="gray" color="white"><b>\t\t<i>aksi 2</i></b></font>
+        \n\n<u>else</u> artinya \"kalau tidak\". Bila kondisi terpenuhi, <i>aksi 1</i> akan dikerjakan,
+        tetapi kalau tidak (yaitu kondisi salah), <i>aksi 2</i> yang akan dikerjakan.
+        Misalnya pada pernyataan berikut:
+        \n\n<font bgcolor="gray" color="white"><b><u>if</u> lampu A nyala <u>then</u></b></font>
+        \n<font bgcolor="gray" color="white"><b>\t\ttekan tombol merah</b></font>
+        \n<font bgcolor="gray" color="white"><b><u>else</u></b></font>
+        \n<font bgcolor="gray" color="white"><b>\t\ttekan tombol biru</b></font>
+        \n\nJika <i>lampu A</i> menyala, maka aksi tekan tombol merah dilakukan, sebaliknya, aksi tekan tombol
+        biru dilakukan bila <i>lampu A</i> tidak menyala.
+        \n\n<font color="blue"><b>2.2.3 Keputusan Bersarang <i>(Nested-If)</i></b></font>
+        \n\nApabila pilihan aksi yang akan dilakukan lebih dari dua buah, maka struktur
+        pemilihannya menjadi lebih rumit, seperti pada contoh berikut (pemilihan
+        bersarang atau <i>nested-if</i>) :
+        \n\n<font bgcolor="gray" color="white"><b><u>if</u> lampu <i>traffic light</i> berwarna merah <u>then</u></b></font>
+        \n<font bgcolor="gray" color="white"><b>\t\tberhenti</b></font>
+        \n<font bgcolor="gray" color="white"><b><u>else</u></b></font>
+        \n\t<font bgcolor="gray" color="white"><b><u>if</u> lampu <i>traffic light</i> berwarna kuning <u>then</u></b></font>
+        \n<font bgcolor="gray" color="white"><b>\t\tjalan hati - hati</b></font>
+        \n\t<font bgcolor="gray" color="white"><b><u>else</u></b></font>
+        \n<font bgcolor="gray" color="white"><b>\t\tjalan terus</b></font>
+        \n\nKelebihan struktur pemilihan terletak pada kemampuannya yang
+        memungkinkan pemroses mengikuti jalur aksi yang berbeda berdasarkan
+        kondisi yang ada, tanpa struktur pemilihan, kita tidak mungkin menulis
+        algoritma untuk permasalahan praktis yang demikian kompleks.
+    </string>
+
+    //konten dan title materi Perulangan
+    <string name="title_struk_loop">2.3 Struktur Perulangan</string>
+    <string name="content_struk_loop"><font color="blue"><b>2.3.1 Tentang Perulangan</b> </font>
+        \n\nSalah satu kelebihan komputer adalah kemampuannya untuk mengerjakan
+        pekerjaan yang sama berulang kali tanpa kenal lelah, ini berbeda dengan
+        manusia yang cepat lelah bila mengerjakan pekerjaan yang sama berulang-ulang.
+        Tidak hanya lelah, tetapi juga cepat bosan.
+        \n\nBagaimana menuliskan sebuah kalimat yang sama sebanyak 100 kali?
+        \nKalimat yang harus ditulis sebanyak 100 kali adalah seperti ini :
+        \n\n<font bgcolor="gray" color="white"><b>Saya Rajin Belajar</b></font>
+        \n\nBagaimana jika kita menuliskan algoritmanya seperti ini :
+        \n<font bgcolor="gray" color="white"><b>1. Tulis \"Saya Rajin Belajar\"</b></font>
+        \n<font bgcolor="gray" color="white"><b>2. Tulis \"Saya Rajin Belajar\"</b></font>
+        \n<font bgcolor="gray" color="white"><b>3. Tulis \"Saya Rajin Belajar\"</b></font>
+        \n<font bgcolor="gray" color="white"><b>sampai dengan</b></font>
+        \n<font bgcolor="gray" color="white"><b>100. Tulis \"Saya Rajin Belajar\"</b></font>
+        \n\nHmm, tentu saja algoritma di atas tidak elegan, karena instruksi
+        \n<font bgcolor="gray" color="white"><b>Tulis \"Saya Rajin Belajar\"</b></font>
+        \nharus ditulis dalam algoritma sebanyak 100 kali! Supaya kita tidak perlu
+        menuliskan aksi yang sama berkali-kali, kita dapat menggunakan notasi
+        pengulangan.
+        \nDi dalam algoritma terdapat banyak notasi pengulangan yang
+        bisa digunakan, antara lain <i>repeat N times</i>, <i>for</i>, <i>repeat-until</i>, dan <i>while</i>.
+        \n\n<font color="blue"><b>2.3.2 Notasi Perulangan <i>Repeat</i> <i>N</i> <i>Times</i></b></font>
+        \n\nDengan notasi pertama, <i>repeat N times</i> (yang artinya: ulangi sebanyak <i>N</i>
+        kali), maka algoritmanya dapat kita tulis menjadi :
+        \n\n<font bgcolor="gray" color="white"><b>ALGORITMA :</b></font>
+        \n\t<font bgcolor="gray" color="white"><b><u>repeat</u> 100 <u>times</u></b></font>
+        \n\t\t<font bgcolor="gray" color="white"><b>Tulis \"Saya rajin belajar\"</b></font>
+        \n\nStruktur pengulangan ini dapat ditulis secara umum dengan pernyataan-pengulangan :
+        \n\t<font bgcolor="gray" color="white"><b><u>repeat</u> <i>N</i> <u>times</u></b></font>
+        \n\t\t<font bgcolor="gray" color="white"><b><i>aksi</i></b></font>
+        \nyang artinya : <i>aksi</i> diulang dikerjakan sebanyak <i>N</i> kali.
+        \n\n<font color="blue"><b>2.3.3 Notasi Perulangan <i>for</i></b></font>
+        \n\nStruktur perulangan yang mirip dengan <i>repeat N times</i> adalah <i>for</i> :
+        \n\n<font bgcolor="gray" color="white"><b><u>for</u> pencacah pengulangan dari 1 sampai <i>N</i> <u>do</u></b></font>
+        \n\nyang artinya: aksi dilakukan sebanyak bilangan cacah pengulangan, yaitu
+        dari 1 sampai <i>N</i> (yaitu sebanyak <i>N</i> kali). Pencacah pengulangan dapat di-set
+        tidak hanya mulai dari 1, tetapi juga dari sembarang nilai yang lain. Maka, contoh
+        masalah penulisan 100 kalimat dengan notasi <i>for</i> menjadi :
+        \n\n<font bgcolor="gray" color="white"><b>ALGORITMA :</b></font>
+        \n\t<font bgcolor="gray" color="white"><b><u>for</u> i dari 1 sampai 100 <u>do</u></b></font>
+        \n\t\t<font bgcolor="gray" color="white"><b>Tulis \"Saya rajin belajar\"</b></font>
+        \n\n<u>i</u> adalah pencacah pengulangan yang mencacah pengulangan dari 1 sampai 100.
+        \n\n<font color="blue"><b>2.3.4 Notasi Perulangan <i>Repeat</i>-<i>Until</i></b></font>
+        \n\nStruktur pengulangan yang lainnya adalah <i>repeat-until</i> (<i>repeat</i> artinya
+        \"ulangi\" dan <i>until</i> artinya \"sampai\" atau \"hingga\") yang mempunyai bentuk
+        umum sebagai berikut :
+        \n\n\t<font bgcolor="gray" color="white"><b><u>repeat</u></b></font>
+        \n\t\t<font bgcolor="gray" color="white"><b><i>aksi</i></b></font>
+        \n\t<font bgcolor="gray" color="white"><b><u>until</u> <i>kondisi</i></b></font>
+        \n\nyang artinya adalah pengulangan aksi dilakukan hingga kondisi
+        (persyaratan) berhenti terpenuhi. Maka, contoh masalah penulisan kalimat 100
+        kali dengan notasi repeat-until menjadi :
+        \n\n<font bgcolor="gray" color="white"><b>ALGORITMA :</b></font>
+        \n\t<font bgcolor="gray" color="white"><b><u>repeat</u></b></font>
+        \n\t\t<font bgcolor="gray" color="white"><b>Tulis \"Saya rajin belajar\"</b></font>
+        \n\t<font bgcolor="gray" color="white"><b><u>until</u> sudah 100 kali</b></font>
+        \n\n<font color="blue"><b>2.3.5 Notasi Perulangan <i>While</i>-<i>Do</i></b> </font>
+        \n\nStruktur perulangan yang terakhir adalah <i>while</i>-<i>do</i> (<i>while</i> artinya \"selagi\" atau \"selama\" :
+        \n\n<font bgcolor="gray" color="white"><b><u>while</u> <i>kondisi</i> <u>do</u></b></font>
+        \n\t\t<font bgcolor="gray" color="white"><b><i>aksi</i></b></font>
+        \n\nyang artinya selama kondisi (persyaratan) pengulangan masih benar,
+        maka <i>aksi</i> dikerjakan. Perbedaannya dengan <i>repeat-until</i>, jika pada
+        <i>repeat-until</i> kondisi pengulangan dievaluasi di akhir, maka pada <i>while-do</i>
+        kondisi pengulangan dievaluasi di awal pengulangan.
+    </string>
+
+    //konten dan title materi Tipe Data
+    <string name="title_tipe_data">4.1 Tipe Data</string>
+    <string name="content_tipe_data"><font color="blue"><b>4.1.1 Tentang Tipe Data</b></font>
+        \n\nProgram komputer pada dasamya memanipulasi objek (data) di dalam
+        memori. Peubah <i>(variable)</i> dan konstanta <i>(constant)</i> adalah objek data
+        dasar yang dimanipulasi di dalam program. Deklarasi daftar peubah
+        digunakan untuk menyatakan tipe peubah. Operator menspesifikasikan
+        operasi apa yang dapat dilakukan terhadap peubah dan konstanta. Ekspresi
+        mengombinasikan peubah-peubah dan konstanta untuk menghasilkan nilai baru.
+        \n\nTipe sebuah objek menentukan himpunan nilai yang dapat dimilikinya dan
+        operasi yang dapat dilakukan pada objek tersebut. Nilal-nilai yang dicakup
+        oleh tipe tersebut dinyatakan di dalam ranah <i>(domain)</i> nilai. Operasi-operasi
+        (beserta operator) yang dapat dilakukan terhadap <b>tipe</b> tersebut juga didefinsikan.
+        \n\nTipe data dapat dikelompokkan menjadi atas dua macam: <b>tipe dasar</b> dan
+        <b>tipe bentukan</b>. Tipe dasar adalah <b>tipe yang dapat langsung dipakai</b>,
+        sedangkan tipe bentukan <b>dibentuk dari tipe dasar atau dari tipe bentukan
+        lain yang sudah didefinisikan sebelumnya</b>.
+        \n\n<font color="blue"><b>4.1.2 Tipe Dasar</b></font>
+        \n\nTipe dasar sudah dikenal dalam kehidupan sehari-hari. Tipe ini sudah ada
+        sejak zaman dahulu <i>(predefined data type)</i>. Kita hampir setiap hari
+        berbicara tentang angka-angka dan karakter.
+        \nDalam dunia pemrograman, yang termasuk ke dalam tipe dasar adalah : <b>bilangan lojik</b>, <b>bilangan bulat</b>,
+        <b>karakter</b>, <b>bilangan riil</b>, dan <b>string</b>. Tiga tipe dasar yang pertama disebut juga
+        <b>tipe ordinal</b> karena setiap konstanta nilainya dapat ditransformasi ke suatu nilai <i>integer</i>.
+        \n\n<font color="blue"><b>4.1.2.1 Bilangan Lojik</b></font>
+        \n\n<b>Nama Tipe</b>
+        \nNama tipe bilangan lojik adalah <i>boolean</i> (diambil dari nama seorang
+        matematikawan Inggris, George Boole).
+        \n\n<b>Ranah Nilai</b>
+        \nBilangan lojik banya mengenal dua buah nilai : benar <i>(true)</i> atau salah
+        <i>(false)</i>. Istilah \"bilangan\" pada \"bilangan lojik\" dikarenakan kita dapat
+        menyatakan \"benar\" dengan angka 1 dan \"salah\" dengan angka 0 (atau
+        sebaliknya, tergantung konvensi yang kita buat).
+        \n\n<b>Konstanta</b>
+        \nKarena ranah nilai tipe <i>boolean</i> hanya beranggotakan dua buah nilal, maka
+        konstanta <i>(constant)</i> yang terdapat pada tipe ini adalah <u>true</u> dan <u>false</u>.
+        \n\n<b>Operasi</b>
+        \nOperasi-operasi yang dapat dilakukan terhadap tipe <i>boolean</i> dikenal dengan
+        <b>operasi logika</b> atau <b>operasi boolean</b>. Operasi logika menghasilkan nilal
+        <i>true</i> atau <i>false</i>. Operator logika yang umum digunakan untuk operasi logika adalah:
+        <i>not</i>, <i>and</i>, <i>or</i>, dan <i>xor</i>.
+        \n\n<font color="blue"><b>4.1.2.2 Bilangan Bulat</b></font>
+        \n\n<b>Nama Tipe</b>
+        \nNama tipe bilangan bulat adalah <i>integer</i>.
+        \n\n<b>Ranah Nilai</b>
+        \nSecara teoritis, tipe bilangan bulat mempunyal ranah nilai yang tidak terbatas.
+        Rentang nilainya adalah dari <b>minus tidak berhingga</b> sampai <b>plus tidak berhingga</b>.
+        \n\n<b>Konstanta</b>
+        \nKonstanta nilai yang bertipe bilangan bulat harus ditulis tanpa mengandung titik
+        desimal. Contoh beberapa konstanta bertipe bilangan bulat misalnya :
+        \n\t78\t\t-14\t\t7654\t\t0\t\t5\t\t9999
+        \n\n<b>Operasi</b>
+        \nOperasi yang dilakukan terhadap bilangan bulat ada dua macam, yaitu <b>operasi aritmetika</b> dan <b>operasi perbandingan</b>.
+        \n\n<font color="blue"><b>4.1.2.3 Bilangan Riil</b></font>
+        \n\n<b>Nama Tipe</b>
+        \nNama tipe bilangan bulat adalah <i>real</i>.
+        \n\n<b>Ranah Nilai</b>
+        \nSebagaimana halnya pada tipe bilangan bulat, secara teoritis tipe bilangan
+        rill memiliki ranah nilal yang tidak terbatas. Rentang nilainya adalah dari
+        <b>minus tidak hingga</b> sampai <b>plus tidak hingga</b>.
+        \n\n<b>Konstanta</b>
+        \nSetiap konstanta yang bertipe bilangan riil harus ditulis dengan tanda titik desimal.
+        Contoh konstanta bertipe bilangan riil misalnya :
+        \n\t78.0\t\t-14.4\t\t76.54\t\t0.5\t\t5.35
+        \n\n<b>Operasi</b>
+        \nSeperti pada bilangan bulat, operasi yang dilakukan terhadap bilangan riil ada dua macam,
+        yaitu <b>operasi aritmetika</b> dan <b>operasi perbandingan</b>.
+        \n\n<font color="blue"><b>4.1.2.4 Karakter</b></font>
+        \n\n<b>Nama Tipe</b>
+        \nNama tipe untuk karakter adalah <i>char</i>.
+        \n\n<b>Ranah Nilai</b>
+        \nRanah nilai untuk karakter adalah semua huruf di dalam alfabet <b>(\'a\'…\'z\', \'A\'…\'Z\')</b>
+        angka desimal <b>(0 … 9)</b>, tanda baca <b>(\'.\', \':\', \'!\', \'?\', \',\', dll)\</b>, operator aritmetik <b>(\'+\', \'-\', \'*\', \'/\')</b>,
+        dan karakter-karakter khusus seperti <b>(\'$\', \'#\', \'@\', \'^\', \'~\', dll)</b>.
+        Daftar karakter baku yang lengkap dapat dilihat di dalam buku-buku yang memuat tabel ASCII.
+        \n\n<b>Konstanta</b>
+        \nKonstanta karakter harus diapit oleh tanda petik tunggal. Contohnya :
+        \n\'h\'\t\t\'9\'\t\t\'Z\'\t\t\'#\'\t\t\'+\'\t\t\' \'
+        \n\n<b>Operasi</b>
+        \nOperasi yang dapat dilakukan pada tipe karakter adalah <b>operasi perbandingan</b>.
+        \n\n<font color="blue"><b>4.1.2.5 String</b></font>
+        \n\n<b>Nama Tipe</b>
+        \nNama tipe <i>string</i> adalah <i>string</i>.
+        \n\n<b>Ranah Nilai</b>
+        \nRanah nilai untuk tipe <i>string</i> adalah deretan karakter yang telah didefinisikan pada ranah karakter.
+        \n\n<b>Konstanta</b>
+        \nSemua konstanta <i>string</i> harus diapit oleh tanda petik tunggal, misalnya :
+        \n\'BANDUNG\'
+        \n\'Teknik Informatika\'
+        \n\'ABCde123\'
+        \n\n<b>Operasi</b>
+        \nOperasi yang dapat dilakukan pada tipe string adalah <b>operasi penyambungan <i>(concatenation)</i></b> dan <b>operasi perbandingan</b>.
+        \n\n<font color="blue"><b>4.1.3 Tipe Bentukan</b></font>
+        \n\nTipe bentukan adalah tipe yang didefinisikan sendiri oleh pemrogram <i>(user-defined
+        type data)</i>. Tipe bentukan disusun oleh satu atau lebih tipe dasar.
+        \nAda dua macam tipe bentukan:
+        \n1. tipe dasar yang diberi nama dengan nama tipe baru,
+        \n2. tipe terstruktur.
+        \n\n<font color="blue"><b>4.1.3.1 Tipe Dasar dengan Nama Baru</b></font>
+        \n\nKadang-kadang pemrogram ingin memberi nama baru terhadap tipe dasar
+        yang sudah dikenal. Alasan pemberian nama baru mungkin agar nama baru
+        tersebut lebih \"akrab\" dan lebih mudah diinterpretasi oleh orang yang membaca teks algoritma.
+        \nKita dapat memberi nama baru untuk tipe dasar tersebut dengan kata kunci
+        <u>type</u>. Ranah nilai, cara menulis konstanta, dan operasi-operasi terhadap
+        tipe baru tersebut tidak berubah, tetap sama dengan tipe dasar aslinya.
+        \n\nContoh : <font bgcolor="gray" color="white"><u>type</u> <b>BilanganBulat</b> : <u>integer</u></font>
+        \n\n<b>BilanganBulat</b> adalah tipe bilangan bulat yang sama saja dengan tipe
+        <i>integer</i>. Apabila kita mempunyai sebuah peubah <i>(variable)</i> yang bernama <u>P</u>
+        dan bertipe <b>BilanganBulat</b>, peubah <u>P</u> tersebut sama saja bertipe integer.
+        \n\n<font color="blue"><b>4.1.3.2 Tipe Terstruktur</b></font>
+        \n\nTipe terstruktur adalah tipe yang berbentuk rekaman <i>(record)</i>. Rekaman
+        disusun oleh satu atau lebih <i>field</i>. Tiap <i>field</i> menyimpan data
+        dari tipe dasar tertentu atau dari tipe bentukan lain yang sudah didefinisikan
+        sebelumnya. Nama rekaman ditentukan sendiri oleh pemrogram.
+    </string>
+
+    //konten dan title materi operator
+    <string name="title_operator">4.2 Operator</string>
+    <string name="content_operator"><font color="blue"><b>4.2.1 Tentang Operator</b></font>
+        \n\n<b>Operator</b> adalah instruksi yang diberikan untuk mendapatkan hasil dari proses tersebut.
+        Biasanya operator berupa karakter matematis atau perintah singkat sederhana.
+        \n\nSebagai contoh, pada operasi <b>10 + 2</b>, angka <b>10</b> dan <b>2</b> disebut sebagai <i>operand</i>,
+        sedangkan tanda tambah (karakter +) adalah <i>operator</i>.
+        \n\nBerikut ini adalah beberapa operator yang ada :
+        \n\n1.<b>Operator Aritmatika</b>
+        \n2.<b>Operator Perbandingan</b>
+        \n3.<b>Operator Logika</b>
+        \n4.<b>Operator <i>Bitwise</i></b>
+        \n5.<b>Operator <i>Assignment</i></b>
+        \n6.<b>Operator Penyambungan <i>(Concatenation)</i></b>
+        \n\n<font color="blue"><b>4.2.2 Operator Aritmatika</b></font>
+        \n\n<b>Operator aritmatika</b> adalah operator yang biasa kita temukan untuk operasi matematika.
+        \n\n<font color="magenta"><b>+</b>\tuntuk Operasi Penambahan</font>
+        \n<font color="magenta"><b>-</b>\tuntuk Operasi Pengurangan</font>
+        \n<font color="magenta"><b>*</b>\tuntuk Operasi Perkalian</font>
+        \n<font color="magenta"><b>/</b>\tuntuk Operasi Pembagian</font>
+        \n<font color="magenta"><b>div</b>\t untuk Operasi Pembagian Angka Bulat</font>
+        \n<font color="magenta"><b>mod</b>\tuntuk Operasi Sisa Hasil Bagi</font>
+        \n\nOperator <u>div</u> (<u>div</u>=<i>divide</i>) adalah operator yang memberikan hasil pembagian berupa bilangan bulat,
+        sedangkan <u>mod</u> (<u>mod</u>=<i>modulo</i>) adalah operator yang memberikan sisa hasil bagi.
+        \n\n<font color="blue"><b>4.2.3 Operator Perbandingan</b></font>
+        \n\n<b>Operator perbandingan</b> digunakan untuk membandingkan 2 buah angka, apakah angka tersebut sama besar,
+        lebih kecil, lebih besar, dll. Nilai dari operator perbandingan ini adalah True atau False (boolean).
+        \n\n<font color="magenta"><b>=</b>\tSama Dengan</font>
+        \n<font color="magenta"><b>&lt;&gt;</b>\tTidak Sama Dengan</font>
+        \n<font color="magenta"><b>&lt;</b>\tLebih Kecil</font>
+        \n<font color="magenta"><b>&gt;</b>\tLebih Besar</font>
+        \n<font color="magenta"><b>&lt;=</b>\tLebih Kecil atau Sama Dengan</font>
+        \n<font color="magenta"><b>&gt;=</b>\tLebih Besar atau Sama Dengan</font>
+        \n\n<font color="blue"><b>4.2.4 Operator Logika</b></font>
+        \n\n<b>Operator logika</b> digunakan untuk menghasilkan nilai <i>boolean</i> <u>true</u> atau <u>false</u> dari 2 kondisi.
+        \n\n<font color="magenta"><b><i>and</i></b> akan menghasilkan nilai <b>TRUE</b> jika <b>kedua</b> <i>operand</i> bernilai <b>TRUE</b></font>
+        \n\n<font color="magenta"><b><i>or</i></b> akan menghasilkan nilai <b>TRUE</b> jika <b>salah satu</b> <i>operand</i> bernilai <b>TRUE</b> </font>
+        \n\n<font color="magenta"><b><i>xor</i></b> akan menghasilkan nilai <b>TRUE</b> jika <b>kedua</b> <i>operand</i> berbeda</font>
+        \n\n<font color="magenta"><b><i>not</i></b> akan menghasilkan nilai <b>TRUE</b> jika <i>operand</i> <b>FALSE</b></font>
+        \n\n<font color="blue"><b>4.2.5 Operator <i>Bitwise</i></b></font>
+        \n\nOperator <i>bitwise</i> mirip dengan operator logika / <i>boolean</i>, tapi dilakukan di level <i>bit</i>.
+        \n\n<font color="magenta"><b><i>and</i></b> <i>Bitwise</i> <i>AND</i> </font>
+        \n<font color="magenta"><b><i>or</i></b> <i>Bitwise</i> <i>OR</i> </font>
+        \n<font color="magenta"><b><i>xor</i></b> <i>Bitwise</i> <i>XOR</i> </font>
+        \n<font color="magenta"><b><i>not</i></b> <i>Bitwise</i> <i>NOT</i> </font>
+        \n<font color="magenta"><b><i>&lt;&lt;</i></b> <i>Bitwise</i> <i>Shift Left</i> (nilai <i>biner</i> dikali 2) </font>
+        \n<font color="magenta"><b><i>&gt;&gt;</i></b> <i>Bitwise</i> <i>Shift Right</i> (nilai <i>biner</i> dibagi 2) </font>
+        \n\n<font color="blue"><b>4.2.6 Operator <i>Assignment</i></b></font>
+        \n\nOperator <i>Assignment</i> adalah operator yang digunakan untuk memberikan nilai ke dalam suatu variabel.
+        Dalam bahasa Pascal, hanya terdapat 1 operator <i>assignment</i> yaitu <b>\':=\'</b>.
+        \n\n<font color="blue"><b>4.2.7 Operator Penyambungan <i>(Concatenation)</i></b></font>
+        \n\nOperator Penyambungan <i>(Concatenation)</i> adalah operator untuk menyambung <i>string</i>. Operator penyambungan
+        di labeli dengan karakter <b>\'+\'</b>.
+        \n\ncontoh :
+        \n<font bgcolor="gray" color="white">\'Teknik\' + \'Informatika\' = \'TeknikInformatika\'</font>.
+    </string>
+
+    //konten dan title materi Tentang Prosedur
+    <string name="title_ttg_prosedur">5.1 Tentang Prosedur</string>
+    <string name="content__ttg_prosedur">Kata \"prosedur\" sering kita dengar dalam kehidupan sehari-hari.
+    Seorang mahasiswa pada setiap awal semester selalu melakukan pendaftaran ulang
+    (registrasi). Langkah- langkah pendaftaran ulang lazim dinyatakan dalam sebuah prosedur yang dinamakan prosedur daftar ulang.
+    \n\nKetika sebuah prosedur dieksekusi, maka instruksi-instruksi di dalamnya dikerjakan satu per satu.
+    Pada contoh registrasi mahasiswa, mahasiswalah yang mengeksekusi prosedur daftar ulang.
+    \nMahasiswa membaca setiap langkah di dalam prosedur, lalu melaksanakan instruksi yang tertulis pada
+    setiap langkah. Efek dari pelaksanaan prosedur dapat diamati sebelum dan
+    sesudah prosedur dijalankan oleh mahasiswa.\nSebelum pelaksanaan
+    prosedur daftar ulang, mahasiswa belum terdaftar di semester yang baru, dan sesudah pelaksanaan prosedur,
+    mahasiswa akan terdaftar di semester yang baru.
+    \n\nDi dalam dunla pemrograman, prosedur adalah modul program yang
+    mengerjakan tugas/aktivitas yang spesifik dan menghasilkan suatu efek
+    <i>netto</i> [LlE96]. Suatu efek <i>netto</i> diketahui dengan membandingkan keadaan
+    awal dan keadaan akhir pada pelaksanaan sebuah prosedur. Oleh karena itu,
+    pada setiap prosedur kita perlu mendefinisikan <b>keadaan awal</b> (K.Awal)
+    sebelum rangkaian instruksi di dalam prosedur dilaksanakan dan <b>keadaan akhir</b> (K.Akhir)
+    yang diharapkan setelah rangkaian instruksi di dalam prosedur dilaksanakan.
+    </string>
+    <string name="title_prosedur">5.2 Penggunaan Prosedur</string>
+    <string name="content_prosedur"><font color="blue"><b>5.2.1 Pendefinisian Prosedur</b></font>
+    \n\nPendefinisian prosedur artinya menuliskan nama prosedur, mendeklarasikan
+    nama-nama konstanta, peubah dan tipe (jika ada), dan menjabarkan
+    rangkaian aksi yang dilakukan. Pada dasarnya, struktur prosedur sama
+    dengan struktur algoritma yang sudah Anda kenal, yaitu: ada bagian judul
+    <i>(header)</i> yang terdiri atas nama prosedur dan deklarasi parameter (jika ada),
+    bagian deklarasi untuk mengumumkan nama-nama, dan bagian algoritma
+    yang disebut badan prosedur. Setiap prosedur mempunyai narna yang unik.
+    Nama prosedur sebaiknya diawali dengan kata kerja karena prosedur berisi suatu aktivitas, misalnya
+    <i>HitungLuas</i>, <i>Tukar</i>, <i>AktifkanMenu</i>, dan lain sebagainya.
+    \n\nParameter adalah nama-nama peubah yang dideklaraskan pada bagian <i>header</i>
+    prosedur. Sebagian besar program memerlukan pertukaran data/informasi
+    antara prosedur (atau fungsi) dan titik di mana ia dipanggil. Penggunaan
+    parameter menawarkan mekanisme pertukaran lnformasi tersebut. Tiap <i>item</i>
+    data ditransfer antara <b>parameter aktual</b> dan <b>parameter formal</b> yang
+    bersesuaian. Parameter aktual (kadang-kadang disebut juga <b>argumen</b>)
+    adalah parameter yang disertakan pada waktu pemanggilan prosedur,
+    sedangkan parameter formal adalah parameter yang dldeklarasikan di dalam
+    bagian <i>header</i> prosedur itu sendiri. Ketika prosedur dipanggil, parameter
+    aktual menggantikan parameter formal. Tiap-tiap parameter aktual berpasangan dengan parameter formal yang bersesuaian.
+    \n\nBerikut ini adalah Notasi Algoritmik untuk mendefinisikan prosedur (tanpa parameter) :
+    \n\n<font bgcolor="gray" color="white"><b><u>procedure</u> NamaProsedur (deklarasi parameter, jika ada)</b></font>
+    \n\n<font bgcolor="gray" color="white"><b><i>{ Spesifikasi prosedur, berisi penjelasan tentang apa yang dilakukan oleh prosedur ini.
+        \nK.Awal : keadaan sebelum prosedur dilaksanakan.
+        \nK.Akhir : keadaan setelah prosedur dilaksanakan. }</i></b></font>
+        <font bgcolor="gray" color="white"><b>\n\nDEKLARASI
+        \n{ <i>semua nama yang dipakai di dalam prosedur dan hanya berlaku lokal di dalam prosedur
+        didefinisikan di sini </i>}
+        \n\nALGORITMA :
+        \n <i>{ badan prosedur, berisi urutan instruksi }</i></b></font>
+    \n\nPendeklarasian parameter di dalam prosedur bukanlah keharusan. Dengan
+    kata lain, parameter boleh ada atau tidak ada. Kelak Anda akan memahami
+    kapan diperlukan pendefinisian prosedur dengan parameter.
+    \n\nContoh : Buatlah prosedur yang membaca panjang alas dan tinggi
+    segitiga, menghitung luas segitiga dengan rumus <i>luas (alas x tinggi)/2</i>, dan
+    mencetak luas segitiga tersebut.
+    \n\n<b>Penyelesaian</b>
+        \n\n<u>procedure</u> HitungLuasSegitiga
+        \n{ <i>Menghitung luas segitiga dengan rumus L = (alas x tinggi)/2 }</i>
+        \n{ <i>K.Awal : sembarang</i> }
+        \n{ <i>K.Akhir : luas segitiga tercetak</i> }
+        \n\nDEKLARASI
+        \n\talas : <u>real</u> <i>{ panjang alas segitiga }</i>
+        \n\ttinggi : <u>real</u> <i>{ tinggi segitiga }</i>
+        \n\tluas : <u>real</u> <i>{ luas segitiga }</i>
+        \n\nALGORITMA :
+        \n<u>read</u>(alas,tinggi)
+        \nluas &#8592; (alas * tinggi)/2
+        \n<u>write</u>(luas)
+        \n\nPerhatikan Algoritma diatas, keadaan awal (K.Awal) prosedur adalah sembarang kondisi, namun setelah prosedur
+        selesai dilaksanakan, keadaan akhirnya (K.Akhir) adalah kondisi dimana luas segitiga tercetak (misalnya ke layar).
+    \n\n<font color="blue"><b>5.2.2 Pemanggilan Prosedur</b></font>
+        \n\nProsedur bukan program yang berdiri sendiri, jadi ia tidak dapat dieksekusi
+    secara langsung. lni berarti, instruksi-lnstruksi di dalam prosedur baru
+    dapat dilaksanakan hanya bila prosedur tersebut diakses. Prosedur diakses
+    dengan cara memanggil namanya dari program pemanggil (mlsalnya dari
+    program utama atau dari modul program lainnya). Jika prosedur tanpa
+    parameter, maka pemanggilannya cukup dengan namanya saja :
+        \n\t\t<font bgcolor="gray" color="white"><b><i>NamaProsedur</i></b></font>
+        \n\nKetika <i>NamaProsedur</i> dipanggil, kendali program berpindah secara otomatis ke
+    prosedur tersebut. Seluruh instruksi di dalam badan prosedur dilaksanakan.
+    Setelah semua instruksi selesai dilaksanakan, kendali program berpindah secara
+    otomatis kembali ke instruksi sesudah pemanggilan prosedur.
+        \n\nAgar nama prosedur dikenal oleh program pemanggil, maka di dalam program
+    pemanggil, kita harus mendeklarasikan purwarupa <i>(prototype)</i> prosedur tersebut.
+    Purwarupa prosedur hanya berisi bagian header prosedur. Pendeklarasian purwarupa juga untuk memberitahu program pemanggil
+    bagaimana cara-cara mengakses prosedur (jumlah parameter dan tipe parameternya, jika ada).
+        \n\nMisalkan, kita mempunyai N buah segitiga dan kita ingin menghitung luas
+    semua segitiga. Prosedur untuk menghitung luas segitiga sudah kita
+    definisikan di dalam Contoh <b>Pendefinisian Prosedur</b> diatas.
+        \n\n<b><u>PROGRAM</u></b> Segitiga
+        \n{ <i>Menghitung luas N buah segitiga </i> }
+        \n\nDEKLARASI
+        \n\ti, N : <u>integer</u>
+        \n\t<u>procedure</u> HitungLuasSegitiga
+        \n { <i>Menghitung luas segitiga dengan rumus L = (alas x tinggi)/2</i> }
+        \n\nALGORITMA :
+        \n\t<u>read</u>(N) { <i>tentukan banyaknya segitiga</i> }
+        \n\t<u>for</u> i &#8592; 1 <u>to</u> N <u>do</u>
+        \n\tHitungLuasSegitiga
+        \n\t<u>endfor</u>
+    \n\n<font color="blue"><b>5.2.3 Parameter</b></font>
+        \n\nProsedur dengan parameter diakses dengan cara memanggil namanya dari
+    program pemanggil (program utama atau modul program lain) disertai
+    parametemya. Parameter yang disertakan pada waktu pemanggilan disebut
+    parameter aktual. Cara pemanggilan prosedur dengan parameter adalah:
+    \n\t<b>NamaProsedur</b>(<i>parameter aktual</i>)
+        \n\nBerdasarkan maksud penggunaanya, terdapat tiga jenis parameter formal yang disertakan di dalam prosedur :
+    \n<b>1. parameter masukan (input parameter)</b>
+    \n<b>2. parameter keluaran (output parameter)</b>
+    \n<b>3. parameter masukan/keluaran (input/output parameter)</b>
+    \n\n<font color="blue"><b>5.2.3.1 Parameter Masukan</b></font>
+        \n\n<b>Parameter masukan</b> adalah parameter yang nilainya berlaku sebagai masukan untuk prosedur.
+        Pada bahasa pemrograman, istilah parameter masukan ini sering dinamakan <b>parameter nilai</b> (<i>value parameter</i> atau
+        <i>parameter by value</i>).
+     \nParameter masukan dideklarasikan di dalam <i>header</i> prosedur, dengan kata kunci <u>input</u>.
+        \n\nContoh :
+        \n<font bgcolor="gray" color="white"><b><u>procedure</u> NamaProsedur (<u>input</u> a, b : <u>real</u>)</b></font>
+        \n\nKata kunci <u>input</u> pada bagian <i>header</i> menyatakan
+        bahwa <b>a</b> dan <b>b</b> adalah parameter masukan.
+    \n\n<font color="blue"><b>5.2.3.2 Parameter Keluaran</b></font>
+        \n\n<b>Parameter keluaran</b> adalah parameter yang menampung keluaran yang dihasilkan oleh prosedur.
+        \nParameter keluaran dideklarasikan di dalam <i>header</i> prosedur, sebagaimana parameter masukan.
+        Tetapi, harus dideklarasikan dengan kata kunci <u>output</u>.
+        \n\nContoh :
+        \n<font bgcolor="gray" color="white"><b><u>procedure</u> NamaProsedur (<u>output</u> a, b : <u>real</u>)</b></font>
+        \n\nKata kunci <u>output</u> pada bagian <i>header</i> menyatakan
+        bahwa <b>a</b> dan <b>b</b> adalah parameter keluaran.
+    \n\n<font color="blue"><b>5.2.3.3 Parameter Masukan/Keluaran</b></font>
+    \n\n<b>Parameter masukan/keluaran</b> adalah parameter yang berfungsi sebagai masukan
+        sekaligus keluaran bagi prosedur tersebut.
+    \nParameter masukan/keluaran dideklarasikan di dalam <i>header</i> prosedur, dengan kata kunci <u>input</u>/<u>output</u>.
+    Hal lain yang harus diperhatikan pada jenis parameter ini adalah parameter aktual harus berupa peubah (<i>variable</i>), tidak
+    boleh berupa konstanta atau ekspresi.
+        \n\nContoh :
+        \n<font bgcolor="gray" color="white"><b><u>procedure</u> NamaProsedur (<u>input</u>/<u>output</u> a : <u>integer</u>)</b></font>
+        \n\nKata kunci <u>input/</u><u>output</u> pada bagian <i>header</i> menyatakan
+        bahwa <b>a</b> adalah parameter masukan/keluaran.
+    </string>
+
+    //title dan konten materi uraian deskriptif
+    <string name="title_uraian_desc">3.1 Uraian Deskriptif</string>
+    <string name="content_uraian_desc">Uraian deskriptif adalah notasi yang digunakan untuk menulis algoritma dengan untaian kalimat deskriptif.
+        \n\nContoh :
+        \n\n<i><b>PROGRAM</b> Euclidean
+        \nDiberikan dua buah bilangan bulat tak-negatif m dan n (m &#8805; n).
+        Algoritma Euclidean mencari pembagi bersama terbesar dari kedua bilangan tersebut,
+        yaitu bilangan bulat positif terbesar yang habis membagi m dan n.</i>
+        \n\nMaka, uraian deskriptifnya adalah :
+        \n\nALGORITMA :
+        \n1. Jika <i>n</i> = 0 maka
+        \n\t\t<i>m</i> adalah jawabannya;
+        \n\t\tstop
+        \n\ttetapi jika <i>n</i> &#8800; 0,
+        \n\t\tlanjutkan ke langkah 2.
+        \n2. Bagilah <i>m</i> dengan <i>n</i> dan misalkan <i>r</i> adalah sisanya.
+        \n3. Ganti nilai <i>m</i> dengan nilai <i>n</i>, dan nilai <i>n</i> dengan nilai <i>r</i>,
+        lalu ulang kembali ke langkah 1.
+        \n\nDengan notasi bergaya kalimat ini, deskripsi setiap langkah dijelaskan
+        dengan bahasa yang gamblang. Proses diawali dengan kata kerja seperti
+        \'baca\', \'hitung\', \'bagi\', \'ganti\', dan sebagainya, sedangkan pernyataan
+        kondisional dinyatakan dengan \'jika&#8230;maka&#8230;\'. Notasi ini baik buat orang
+        awam, tetapi terdapat kesukaran menerjemahkannya langsung ke dalam notasi bahasa pemrograman.
+    </string>
+
+    //title dan konten materi flowchart
+    <string name="title_flowchart">3.2 Flowchart</string>
+    <string name="content_flowchart">Pada masa awal perkembangan komputer, ilmuwan menspesifikasikan
+    algoritma sebagai bagan-alir (<i>flowchart</i>), yang mengekspresikan algoritma
+    sebagai sekumpulan bentuk-bentuk geometri (seperti persegi panjang,
+    lingkaran, jajaran genjang, bentuk-intan, dan sebagainya) yang berisi
+    langkah-langkah komputasi. Kotak empat persegi panjang menyatakan
+    proses, sedangkan pernyataan kondisional dinyatakan dengan bentuk intan
+    (<i>diamond</i>).\nBagan-alir populer pada awal era pemrograman dengan
+    komputer (terutama dengan bahasa <i>Basic</i>, <i>Fortran</i>, dan <i>Cobol</i>).
+    \nBagan-alir mengambarkan aliran instruksi di dalam program secara visual.
+    \n\nAlgoritma Euclidean jika kita tulis dengan menggunakan <i>flowchart</i> adalah seperti di bawah ini :
+        \n
+    </string>
+
+    //title dan konten materi pseudocode
+    <string name="title_pseudocode">3.3 Pseudocode</string>
+    <string name="content_pseudocode"><b><i>Pseudo-code</i></b> (pseudo artinya semu atau tidak sebenarnya) adalah notasi yang mirip
+    dengan notasi bahasa pemrograman tingkat tinggi, khususnya (paling sering) bahasa <i>Pascal</i> dan <i>C</i>.
+    \nLebih tepatnya <i>Pseudo-code</i> adalah campuran antara bahasa alami dengan
+    bahasa pemrograman. Namun, tidak seperti bahasa pemrograman yang direpotkan dengan tanda titik koma
+    (<i>semicolon</i>), indeks, format keluaran, aturan khusus, dan sebagainya, maka sembarang versi <i>pseudo-code</i>
+    dapat diterima asalkan perintahnya tidak membingungkan pembaca [LUI85].
+    \n\nAlgoritma Euclidean jika kita tulis dengan menggunakan notasi <i>pseudo-code</i> adalah seperti di bawah ini :
+    \n\n<i><b><i>PROGRAM</i></b> Euclidean
+        \nDiberikan dua buah bilangan bulat tak-negatif m dan n (m &#8805; n).
+        Algoritma Euclidean mencari pembagi bersama terbesar dari kedua bilangan tersebut,
+        yaitu bilangan bulat positif terbesar yang habis membagi m dan n.</i>
+        \n\nDEKLARASI :
+        \n\tm, n : <u>integer</u>
+        \n<i>{ bilangan bulat yang akan dicari pbt-nya }</i>
+        \n\tr : <u>integer</u> <i>{ sisa hasil bagi }</i>
+        \n\nALGORITMA :
+        \n\t<u>read</u>(m, n) <i>{ m &#8805; n }</i>
+        \n\t<u>while</u> n &#8800; 0 <u>do</u>
+        \n\t\t r &#8592; m <u>MOD</u> n <i>{ hitung sisa hasil bagi }</i>
+        \n\t\tm &#8592; n
+        \n\t\tn &#8592; r
+        \n\t<u>endwhile</u>
+        \n<i>{ kondisi selesai pengulangan: n = 0, maka gcd(m,n) = m }</i>
+        \n\t<u>write</u>(m)
+        \n\nKata-kata yang digarisbawahi menyatakan kata-kata penting (<i>keywords</i>) yang nantinya
+        berpadanan dengan kata penting pada bahasa komputer yang dipilih untuk mentranslasikan
+        algoritma tersebut.
+        \nKalimat yang diapit dengan pasangan kurung kurawal (<b>{ dan }</b>) menyatakan
+        komentar. Komentar berguna untuk lebih memperjelas instruksi yang dituliskan.
+        Peubah yang digunakan dalam algoritma dituliskan pada bagian <b>Deklarasi</b>, sedangkan langkah - langkah
+        penyelesaian masalah dinyatakan pada bagian <b>Algoritma</b>.
+        \nData masukan yang diperlukan algoritma dibaca dengan perintah <u>input</u>,
+        sedangkan keluaran algoritma ditulis dengan perintah <u>output</u>. Karakter \"&#8592;\"
+        menyatakan bahwa nilai di sebelah kanannya diisikan ke dalam peubah di sebelah kirinya.
+    </string>
+
+    //title dan konten materi Definisi fungsi
+    <string name="title_def_fungsi">6.1 Definisi Fungsi</string>
+    <string name="content_def_fungsi">Fungsi adalah upa-program yang memberikan/mengembalikan <i>(return)</i>
+    sebuah nilai dari tipe tertentu (tipe dasar atau tipe bentukan). Definisi fungsi
+    di dalam program bersesuaian dengan definisi fungsi di dalam matematika.
+    Di dalam matematika, kita mengenal cara penulisan fungsi seperti pada contoh berikut :
+        \n<i>1. f(x) = 2x&#178; + 5x - 8</i>
+        \n<i>2. H(x,y) = 3x - y + xy</i>
+    \n\nPada kedua contoh di atas, <i>f</i> dan <i>H</i> adalah nama fungsi, sedangkan <i>x</i> dan <i>y</i>
+    adalah <i>parameter</i> <b>fungsi</b> yang bersangkutan. Nilai yang diberikan oleh
+    fungsi bergantung pada masukan parameter. Sebagai misal :
+        \n\n1. <i>x = 2, maka f(2) = 2.2&#178; + 5.2 - 8 = 10</i>
+        \n2. <i>x = 1, y = 2, maka H(1,2) = 3.1 - 2 + 1.2 = 3</i>
+    \n\nNilai 10 dan 3 pada kedua contoh di atas adalah nilai yang diberikan <i>(return
+    value)</i> oleh masing-masing fungsi <i>f</i> dan fungsi <i>H</i>.
+    \n\nSebagaimana halnya dengan prosedur, fungsi diakses dengan memanggil
+    namanya. Seperti pada prosedur, fungsi juga dapat mengandung daftar
+    parameter formal. Parameter pada fungsi selalu merupakan <b>parameter
+    masukan</b>. Dengan kata lain, <b>tidak ada fungsi yang mempunyai parameter
+    keluaran atau parameter masukan/keluaran</b>. Parameter masukan pada
+    fungsi berarti bahwa parameter tersebut merupakan masukan yang
+    digunakan oleh fungsi tersebut untuk menghasilkan nilai.
+    </string>
+
+    //title dan konten materi Penggunaan fungsi
+    <string name="title_penggunaan_fungsi">6.2 Penggunaan Fungsi</string>
+    <string name="content_penggunaan_fungsi"><font color="blue"><b>6.2.1 Pendefinisian Fungsi</b></font>
+        \n\nSebagaimana halnya pada prosedur, struktur fungsi sama dengan struktur
+    algoritma yang sudah Anda kenal : ada baglan <i>header</i> yang berisi nama
+    fungsi (beserta parameter masukan, jika ada) dan spesifikasi tentang fungsi
+    tersebut, baglan deklarasi, dan badan fungsi.
+        \n\nNotasi Algoritmik untuk mendefinisikan fungsi adalah :
+        \n\n<u>function</u> NamaFungsi (<u>input</u> <i>deklarasi parameter</i>, jika ada) &#8594; <i>tipe</i>
+        \n{<i> spesifikasi fungsi, menjelaskan apa yang dilakukan dan yang dikembalikan oleh fungsi </i>}
+        \n\nDEKLARASI
+        \n{<i> semua nama yang dipakai di dalam fungsi dan hanya berlaku lokal di dalam fungsi
+        di definisikan di sini</i> }
+        \n\nALGORITMA :
+        \n{<i> badan fungsi, berisi instruksi - instruksi untuk menghasilkan nilai yang akan
+        dikembalikan oleh fungsi</i> }
+        \n<u>return</u> ekspresi
+        \n\n<i>Tipe</i> menspesifikasikan tipe nilai yang diberikan oleh fungsi. Nilai yang
+    diberikan oleh fungsi dapat bertipe dasar maupun bertipe bentukan.
+    Parameter formal selalu berjenis parameter masukan sehingga deklarasi
+    nama parameter selalu diawali dengan kata <u>input</u>. Sebagaimana halnya pada
+    prosedur, parameter fungsi pada fungsi tidak selalu harus ada.
+        \n\nSemua nama peubah/konstanta yang hanya berlaku di dalam fungsi saja
+    diumumkan di bagian deklarasi. Nama yang didefinisikan di dalam bagian
+    deklarasi fungsi hanya dikenal dan berlaku di dalam fungsi yang bersangkutan
+    saja, fungsi lain atau program utama tidak dapat menggunakannya.
+        \n\nPernyataan
+        \n<font bgcolor="gray" color="white"><b><u>return</u> <i>ekspresi</i></b></font>
+        \ndi dalam badan fungsi bertujuan untuk mengembalikan nilai yang dihasilkan
+    oleh fungsi tersebut. Ekspresi dapat berupa konstanta, atau sebuah peubah, atau
+    sebuah rumus. Untuk lebih jelasnya, silahkan lihat contoh dibawah ini :
+        \n\nTulislah fungsi untuk menghasilkan nilai
+        \n<i>F(x) = 2x&#178; + 5x - 8, x &#1013; <b>R</b></i>
+        \n\n<b>PENYELESAIAN</b>
+        \n<font bgcolor="gray" color="white"><b><u>function</u> F(<i>input</i> x : <u>real</u></b>) &#8594; <u>real</u>
+        \n{ <i>mengembalikan nilai F(x) = 2x&#178; + 5x - 8, x &#1013; <b>R</b></i> }
+        \n\nDEKLARASI
+        \n{ <i>tidak ada</i> }
+        \n\nALGORITMA :
+        \n<u>return</u> 2*x*x + 5*x - 8</font>
+        \n\nPada algoritma diatas,
+        \n<b>F</b> adalah nama fungsi, tipe-nya <i>real</i>
+        \n<b>x</b> adalah parameter <i>(by value)</i> formal
+        \ndan di dalam badan fungsi, nilai yang dihasilkan oleh fungsi dikembalikan <i>(return)</i>
+        ke titik pemanggilan dengan pernyataan :
+        \n<font bgcolor="gray" color="white"><u>return</u> 2*x*x + 5*x - 8</font>
+        \nyang dalam hal ini, <u>return</u> mengembalikan hasil evaluasi dari ekspresi :
+        \n<font bgcolor="gray" color="white"><u>return</u> 2*x*x + 5*x - 8</font>
+    \n\n<font color="blue"><b>6.2.2 Pemanggilan Fungsi</b></font>
+        \n\nFungsi diakses dengan cara memangil namanya dari program pemanggil,
+    diikuti dengan daftar parameter aktual (bila ada), Karena fungsi
+    menghasilkan nilai, maka nilai tersebut dapat diperlakukan dengan dua
+    cara. Pertama, nilai yang dikemballkan oleh fungsi ditampung di dalam
+    sebuah peubah yang bertipe sama dengan tipe fungsi :
+        \n\n<font bgcolor="gray" color="white"><b>peubah &#8592; NamaFungsi(parameter aktual, jika ada);</b></font>
+        \n\nKedua, nilai yang dikembalikan oleh fungsi dapat langsung dimanipulasi :
+        \n<font bgcolor="gray" color="white"><u>write</u>(F(5))
+        \np &#8592; 2*H(x,y,z) - x + y
+        \n<u>if</u> Genap(m) <u>then</u> &#8230;</font>
+        \n\nMisalkan, dibaca dua buah nilai <i>integer, a dan b</i>. Tentukan nilai yang terbesar dari keduanya.
+        \n\n<b>PENYELESAIAN</b>
+        \n<font bgcolor="gray" color="white"><b><u>PROGRAM</u> TentukanMaksimum
+        \n{ <i>Program yang memanggil fungsi Maks untuk menampilkan nilai maksimum dari a dan b.</i> }
+        \n\nDEKLARASI
+        \na, b : <u>integer</u>
+        \n\t<u>function</u> Maks(<i>input</i> a, b: <u>integer</u>) &#8594; <u>integer</u>
+        \n{ <i>mengembalikan harga terbesar dari a dan b</i> }
+        \n\nALGORITMA :
+        \n\t<u>read</u>(a, b)
+        \n\t<u>write</u>(Maks(a, b))</b></font>
+    </string>
+
+    <string name="expl_bsort">
+ Bubble Sort adalah salah satu algoritma untuk sorting data, atau kata lainnya mengurutkan data dari yang
+        terbesar ke yang terkecil atau sebaliknya (Ascending atau Descending).
+        Bubble sort (metode gelembung) adalah metode/algoritma pengurutan dengan cara melakukan penukaran
+        data dengan tepat disebelahnya secara terus menerus sampai bisa dipastikan data sudah terurut.
+    </string>
+    <string name="expl_ssort">
+        Selection Sort adalah metode/algoritma pengurutan dengan cara mencari elemen yang tepat untuk diletakkan di posisi yang telah diketahui,
+        dan meletakkannya di posisi tersebut setelah data tersebut ditemukan.
+        Selection Sort Membandingkan elemen yang sekarang dengan elemen yang berikutnya sampai dengan elemen yang terakhir.
+        Jika ditemukan elemen lain yang lebih kecil dari elemen sekarang
+        maka dicatat posisinya dan kemudian ditukar.
+    </string>
+    <string name="expl_insort">
+        Insertion sort adalah sebuah metode pengurutan data dengan menempatkan setiap elemen data pada posisinya dengan cara
+        melakukan perbandingan dengan data – data yang ada. Ide algoritma dari metode insertion sort ini dapat dianalogikan
+        sama seperti mengurutkan kartu, dimana jika suatu kartu dipindah tempatkan menurut posisinya, maka kartu yang lain
+        akan bergeser mundur atau maju sesuai kondisi pemindahanan kartu tersebut.
+        Dalam pengurutan data, metode ini dipakai bertujuan untuk menjadikan bagian sisi kiri array terurutkan sampai dengan seluruh array diurutkan.
+    </string>
+
+    <string name="title_helloWorldC">Hello World</string>
+
+    <string name="title_BilGen">Bilangan Genap</string>
+
+    <string name="title_konversi">Konversi Ke Detik</string>
+
+    <string name="title_sumDeret">Penjumlahan Deret</string>
+
+    <string name="AppBarTitle">Algoritma Dasar Pemrograman</string>
+
+    <string-array name="ukuranFont">
+        <item>8pt</item>
+        <item>10pt</item>
+        <item>12pt</item>
+        <item>14pt</item>
+        <item>16pt</item>
+        <item>18pt</item>
+        <item>20pt</item>
+        <item>22pt</item>
+        <item>24pt</item>
+    </string-array>
+
+    <string-array name="valueSize">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+    </string-array>
+</resources>

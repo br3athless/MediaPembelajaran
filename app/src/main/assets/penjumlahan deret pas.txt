@@ -1,0 +1,19 @@
+PROGRAM PenjumlahanDeret;
+{ Menjumlahkan deret 1 + 2 + 3 + ... + N
+dengan N adalah bilangan bulat positif. }
+
+{Deklarasi}
+var N : integer;
+	i : integer;
+	sum : integer;
+
+{Algoritma}
+begin
+	write('Berapa N?'); readln(N);	{banyaknya suku deret}
+	sum:=0;	{ inisialisasi jumlah deret dengan 0}
+	for i:= 1 to N do
+	begin
+		sum:= sum + i;
+	end;
+	writeln('Jumlah deret = ', sum);
+end.

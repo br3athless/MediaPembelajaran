@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="r3ckless.mediapembelajaran">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/alpro"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        //activity SplashScreen sebagai Main dan launcher
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //main Activity
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            />
+
+        //MateriActivity dengan back button ke MainActivity
+        <activity
+            android:name=".MateriActivity"
+            android:label="Materi"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CodeActivity"
+            android:label="@string/title_activity_code"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DefinisiAlgo"
+            android:label="Pengantar Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".SejarahAlgo"
+            android:label="Pengantar Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".StrukturUrut"
+            android:label="Struktur Dasar Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".StrukturKeputusan"
+            android:label="Struktur Dasar Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".StrukturPerulangan"
+            android:label="Struktur Dasar Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".TipeData"
+            android:label="Tipe Data dan Operator"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".Operator"
+            android:label="Tipe Data dan Operator"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".TtgProsedur"
+            android:label="Prosedur"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".PenggunaanProsedur"
+            android:label="Prosedur"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".UraianDeskriptif"
+            android:label="Notasi Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".Flowchart"
+            android:label="Notasi Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".Pseudocode"
+            android:label="Notasi Algoritma"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".DefinisiFungsi"
+            android:label="Fungsi"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".PenggunaanFungsi"
+            android:label="Fungsi"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".Video"
+            android:label="Video"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".VisualizeActivity"
+            android:label="Visualisasi"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".BubbleSortActivity"
+            android:label="Bubble Sort"
+            android:parentActivityName=".VisualizeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VisualizeActivity" />
+        </activity>
+        <activity
+            android:name=".SelectionSortActivity"
+            android:label="Selection Sort"
+            android:parentActivityName=".VisualizeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VisualizeActivity" />
+        </activity>
+        <activity
+            android:name=".InsertionSortActivity"
+            android:label="Insertion Sort"
+            android:parentActivityName=".VisualizeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VisualizeActivity" />
+        </activity>
+        <activity
+            android:name=".Preferences"
+            android:label="Pengaturan"
+            android:parentActivityName=".MateriActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MateriActivity" />
+        </activity>
+        <activity
+            android:name=".HelloWorldC"
+            android:label="Contoh Koding Bahasa C"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".HelloWorldCpp"
+            android:label="Contoh Koding Bahasa C++"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".HelloWorldPascal"
+            android:label="Contoh Koding Bahasa Pascal"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".BilanganGenapC"
+            android:label="Contoh Koding Bahasa C"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".BilanganGenapPas"
+            android:label="Contoh Koding Bahasa Pascal"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".BilanganGenapCpp"
+            android:label="Contoh Koding Bahasa C++"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".KonversiDetikC"
+            android:label="Contoh Koding Bahasa C"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".KonversiDetikCpp"
+            android:label="Contoh Koding Bahasa C++"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".KonversiDetikPas"
+            android:label="Contoh Koding Bahasa Pascal"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".JumlahDeretC"
+            android:label="Contoh Koding Bahasa C"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity
+            android:name=".JumlahDeretCpp"
+            android:label="Contoh Koding Bahasa C++"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+        <activity android:name=".JumlahDeretPas"
+            android:label="Contoh Koding Bahasa Pascal"
+            android:parentActivityName=".CodeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CodeActivity" />
+        </activity>
+    </application>
+
+</manifest>

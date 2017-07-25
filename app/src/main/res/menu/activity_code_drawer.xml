@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_c"
+            android:icon="@drawable/c"
+            android:title="C" />
+        <item
+            android:id="@+id/nav_cplus"
+            android:icon="@drawable/cplusplus"
+            android:title="C++" />
+        <item
+            android:id="@+id/nav_pascal"
+            android:icon="@drawable/pascal"
+            android:title="Pascal" />
+    </group>
+
+    <item android:title="Lain - Lain">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/tentang"
+                android:title="Tentang Aplikasi" />
+        </menu>
+    </item>
+
+</menu>
