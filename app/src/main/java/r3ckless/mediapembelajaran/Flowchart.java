@@ -1,8 +1,10 @@
 package r3ckless.mediapembelajaran;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
@@ -12,15 +14,16 @@ import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.util.TypedValue;
 import android.view.Menu;
+import android.view.View;
 import android.widget.TextView;
 
 public class Flowchart extends AppCompatActivity {
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return false;
-    }
+//    @Override
+//    public boolean onSupportNavigateUp() {
+//        onBackPressed();
+//        return false;
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,23 @@ public class Flowchart extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("fSize", Context.MODE_PRIVATE);
         float myTsize = sharedPref.getFloat("fSize", -1);
         myTextView.setTextSize(TypedValue.COMPLEX_UNIT_PT,myTsize);
+
+        FloatingActionButton myFabNext = (FloatingActionButton) findViewById(R.id.fabNext_Fc);
+        myFabNext.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(Flowchart.this, Pseudocode.class);
+                Flowchart.this.startActivity(i);
+            }
+        });
+
+        FloatingActionButton myFabPrev = (FloatingActionButton) findViewById(R.id.fabPrev_Fc);
+        myFabPrev.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(Flowchart.this, UraianDeskriptif.class);
+                Flowchart.this.startActivity(i);
+            }
+        });
+
     }
 
     @Override

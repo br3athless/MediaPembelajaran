@@ -1,8 +1,10 @@
 package r3ckless.mediapembelajaran;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
@@ -13,15 +15,16 @@ import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
 import android.util.TypedValue;
 import android.view.Menu;
+import android.view.View;
 import android.widget.TextView;
 
 public class StrukturUrut extends AppCompatActivity {
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return false;
-    }
+//    @Override
+//    public boolean onSupportNavigateUp() {
+//        onBackPressed();
+//        return false;
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,22 @@ public class StrukturUrut extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("fSize", Context.MODE_PRIVATE);
         float myTsize = sharedPref.getFloat("fSize", -1);
         myTextView.setTextSize(TypedValue.COMPLEX_UNIT_PT,myTsize);
+
+        FloatingActionButton myFabNext = (FloatingActionButton) findViewById(R.id.fabNext_StrukturUrut);
+        myFabNext.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(StrukturUrut.this, StrukturKeputusan.class);
+                StrukturUrut.this.startActivity(i);
+            }
+        });
+
+        FloatingActionButton myFabPrev = (FloatingActionButton) findViewById(R.id.fabPrev_StrukturUrut);
+        myFabPrev.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(StrukturUrut.this, SejarahAlgo.class);
+                StrukturUrut.this.startActivity(i);
+            }
+        });
     }
 
     @Override

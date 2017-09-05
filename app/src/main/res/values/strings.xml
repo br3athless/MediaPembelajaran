@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Alpro</string>
     <string name="aboutTitle">Alpro</string>
-    <string name="aboutContent">Aplikasi ini adalah aplikasi Media Pembelajaran untuk Mata Kuliah Algoritma dan Dasar Pemrograman.
+    <string name="aboutContent">Aplikasi ini adalah aplikasi Media Pembelajaran Pada Materi Algoritma dan Dasar Pemrograman.
+        \nAplikasi ini dibuat untuk semua orang yang ingin belajar algoritma.
         \nAplikasi ini dibuat oleh Nur Fahmi.\nPoliteknik Negeri Pontianak.
     </string>
 
@@ -673,10 +674,11 @@
     </string>
 
     <string name="expl_bsort">
- Bubble Sort adalah salah satu algoritma untuk sorting data, atau kata lainnya mengurutkan data dari yang
+        Bubble Sort adalah salah satu algoritma untuk sorting data, atau kata lainnya mengurutkan data dari yang
         terbesar ke yang terkecil atau sebaliknya (Ascending atau Descending).
         Bubble sort (metode gelembung) adalah metode/algoritma pengurutan dengan cara melakukan penukaran
         data dengan tepat disebelahnya secara terus menerus sampai bisa dipastikan data sudah terurut.
+        Urutan yang di tampilkan saat ini adalah urutan dari yang terkecil sampai terbesar <i>Ascending</i>
     </string>
     <string name="expl_ssort">
         Selection Sort adalah metode/algoritma pengurutan dengan cara mencari elemen yang tepat untuk diletakkan di posisi yang telah diketahui,
@@ -684,6 +686,7 @@
         Selection Sort Membandingkan elemen yang sekarang dengan elemen yang berikutnya sampai dengan elemen yang terakhir.
         Jika ditemukan elemen lain yang lebih kecil dari elemen sekarang
         maka dicatat posisinya dan kemudian ditukar.
+        Urutan yang di tampilkan saat ini adalah urutan dari yang terkecil sampai terbesar <i>Ascending</i>
     </string>
     <string name="expl_insort">
         Insertion sort adalah sebuah metode pengurutan data dengan menempatkan setiap elemen data pada posisinya dengan cara
@@ -691,6 +694,7 @@
         sama seperti mengurutkan kartu, dimana jika suatu kartu dipindah tempatkan menurut posisinya, maka kartu yang lain
         akan bergeser mundur atau maju sesuai kondisi pemindahanan kartu tersebut.
         Dalam pengurutan data, metode ini dipakai bertujuan untuk menjadikan bagian sisi kiri array terurutkan sampai dengan seluruh array diurutkan.
+        Urutan yang di tampilkan saat ini adalah urutan dari yang terkecil sampai terbesar <i>Ascending</i>
     </string>
 
     <string name="title_helloWorldC">Hello World</string>

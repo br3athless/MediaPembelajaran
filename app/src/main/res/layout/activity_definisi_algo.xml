@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="r3ckless.mediapembelajaran.DefinisiAlgo"
     android:orientation="vertical"
-    android:background="#dedede">
+    android:background="#dedede"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appBarLayout"
+    <LinearLayout
+        android:id="@+id/viewContent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="r3ckless.mediapembelajaran.DefinisiAlgo"
+        android:orientation="vertical"
+        android:background="#dedede"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-    </android.support.design.widget.AppBarLayout>
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
 
-    <TextView
-        android:id="@+id/titleView"
-        style="@style/titleContentBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/title_def_algo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:layout_margin="5dp"
-        android:textColor="#1f65cf"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/titleView"
+                style="@style/titleContentBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/title_def_algo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#1f65cf" />
 
-        <TextView
-            android:id="@+id/contentViewDefAlgo"
-            style="@style/ContentView"
+        <ScrollView
+            android:id="@+id/scrollV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:text="@string/content_def_algo"
-            />
+            android:layout_weight="0.80">
 
-    </ScrollView>
+            <TextView
+                android:id="@+id/contentViewDefAlgo"
+                style="@style/ContentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text="@string/content_def_algo" />
+        </ScrollView>
+    </LinearLayout>
 
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNext_defAlgo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_next"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/scrollV"
+        app:layout_anchorGravity="center|right|end"
+        app:rippleColor="@android:color/transparent" />
+
+</android.support.design.widget.CoordinatorLayout>

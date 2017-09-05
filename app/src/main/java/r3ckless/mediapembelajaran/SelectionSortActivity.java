@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class SelectionSortActivity extends AppCompatActivity {
 
     private TextView[] txtnum;
@@ -40,6 +43,22 @@ public class SelectionSortActivity extends AppCompatActivity {
         btn_sort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btn_sort.setEnabled(false);
+
+                Timer buttonTimer = new Timer();
+                buttonTimer.schedule(new TimerTask() {
+
+                    @Override
+                    public void run() {
+                        runOnUiThread(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                btn_sort.setEnabled(true);
+                            }
+                        });
+                    }
+                }, 8000);
                 ssort();
             }
         });
